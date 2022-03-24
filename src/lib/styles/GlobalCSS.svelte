@@ -1,0 +1,6 @@
+<style global>
+	@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap');
+	* {
+		font-family: 'Mulish', sans-serif;
+	}
+</style>
