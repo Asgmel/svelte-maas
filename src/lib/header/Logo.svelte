@@ -1,13 +1,21 @@
 <script lang="ts">
 </script>
 
-<h1>maas<span>.</span></h1>
+<div>
+	<h1>maas<span>.</span></h1>
+</div>
 
 <style>
+	div {
+		grid-area: logo;
+	}
+
 	h1 {
-		font-style: normal;
-		font-weight: 800;
 		font-size: 30px;
 		line-height: 38px;
+	}
+
+	span {
+		color: var(--color-pink);
 	}
 </style>

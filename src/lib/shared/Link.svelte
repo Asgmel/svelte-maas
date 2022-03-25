@@ -14,6 +14,6 @@
 		font-size: 16px;
 		line-height: 28px;
 		text-decoration-line: underline;
-		color: --color-black;
+		color: var(--color-black);
 	}
 </style>
