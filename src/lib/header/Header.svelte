@@ -5,6 +5,7 @@
 	import Logo from './Logo.svelte';
 	import Button from '../shared/Button.svelte';
 	import Link from '../shared/Link.svelte';
+	import MobileMenu from './MobileMenu.svelte';
 </script>
 
 <!-- CSS -->
@@ -30,6 +31,7 @@
 				<Button link ghostButton>Contact Us</Button>
 			</li>
 		</ul>
+		<MobileMenu />
 	</div>
 </nav>
 
@@ -47,15 +49,15 @@
 		height: 100%;
 		margin: 0 auto;
 		display: grid;
-		grid-template-rows: 40px 40px 40px;
-		grid-template-columns: 140px min-content 1fr min-content 140px;
-		grid-template-areas: '. . . . .' '. logo . links .' '. . . . .';
+		grid-template-rows: 20px 40px;
+		grid-template-columns: 30px min-content 1fr min-content 30px;
+		grid-template-areas: '. . . . .' '. logo . links .';
 		align-items: center;
 	}
 
 	.links {
+		display: none;
 		grid-area: links;
-		display: grid;
 		grid-template-columns: 64px 66px 72px 117px;
 		column-gap: 30px;
 		text-align: center;
@@ -70,5 +72,24 @@
 		align-items: center;
 		height: 100%;
 		list-style-type: none;
+	}
+
+	@media only screen and (min-width: 600px) {
+		.content {
+			grid-template-rows: 40px 40px;
+			grid-template-areas: '. . . . .' '. logo . links .';
+			grid-template-columns: 60px min-content 1fr min-content 60px;
+		}
+	}
+
+	@media only screen and (min-width: 900px) {
+		.links {
+			display: grid;
+		}
+	}
+	@media only screen and (min-width: 1200px) {
+		.content {
+			grid-template-columns: 140px min-content 1fr min-content 140px;
+		}
 	}
 </style>

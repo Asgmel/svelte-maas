@@ -4,6 +4,10 @@
 	export let href = '/';
 	export let width = 'auto';
 	export let height = 'auto';
+	export let transparent = false;
+	export let onClick = () => {
+		console.log('test');
+	};
 </script>
 
 {#if link}
@@ -12,6 +16,7 @@
 		class="button"
 		class:ghostButton
 		class:fillButton={!ghostButton}
+		class:transparent
 		style="width: {width}; height: {height}"
 	>
 		<slot />
@@ -21,6 +26,8 @@
 		class="button"
 		class:ghostButton
 		class:fillButton={!ghostButton}
+		class:transparent
+		on:click={onClick}
 		style="width: {width}; height: {height}"
 	>
 		<slot />
@@ -30,6 +37,7 @@
 <style>
 	a {
 		padding: 8px 0;
+		text-decoration: none;
 	}
 	.button {
 		border-radius: 4px;
@@ -48,5 +56,9 @@
 	.fillButton {
 		color: var(--color-white);
 		background-color: var(--color-pink);
+	}
+	.transparent {
+		color: var(--color-black);
+		background-color: rgba(0, 0, 0, 0);
 	}
 </style>
