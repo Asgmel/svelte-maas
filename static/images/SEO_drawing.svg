@@ -6,7 +6,7 @@
    fill="none"
    version="1.1"
    id="svg50"
-   sodipodi:docname="SEO Drawing.svg"
+   sodipodi:docname="SEO_drawing.svg"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,19 +23,20 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      showgrid="false"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="132.58252"
-     inkscape:cy="353.55339"
-     inkscape:window-width="2560"
+     inkscape:zoom="4.0000002"
+     inkscape:cx="265.37499"
+     inkscape:cy="227.49999"
+     inkscape:window-width="3440"
      inkscape:window-height="1377"
-     inkscape:window-x="-2568"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg50" />
   <path
-     d="M 347.37131,354.47002 H 142.89733 c -17.188,0 -31.16998,-13.969 -31.16998,-31.141 v -204.287 c 0,-17.171 13.98198,-31.141005 31.16998,-31.141005 h 204.47398 c 17.187,0 31.17,13.970005 31.17,31.141005 v 204.287 c 0,17.172 -13.983,31.141 -31.17,31.141 z M 142.89733,92.883015 c -14.461,0 -26.18299,11.712005 -26.18299,26.159005 v 204.287 c 0,14.447 11.72199,26.159 26.18299,26.159 h 143.22898 c 48.285,0 87.428,-39.107 87.428,-87.348 v -143.098 c 0,-14.447 -11.723,-26.159005 -26.183,-26.159005 z"
+     d="M 347.37131,354.47002 H 142.89733 c -17.188,0 -31.16998,-13.969 -31.16998,-31.141 v -204.287 c 0,-17.171 13.98198,-31.141005 31.16998,-31.141005 h 204.47398 c 17.187,0 31.17,13.970005 31.17,31.141005 v 204.287 c 0,17.172 -13.983,31.141 -31.17,31.141 z M 141.76475,89.383015 c -14.461,0 -28.15726,14.329445 -28.18299,28.776425 l -0.36742,206.287 c -0.0257,14.44698 13.97199,28.54158 28.43299,28.54158 h 144.72898 c 48.285,0 90.678,-42.607 90.678,-90.848 l 0,-144.098 c 0,-14.447 -14.223,-28.659005 -28.683,-28.659005 z"
      fill="#f2f2f2"
-     id="path2" />
+     id="path2"
+     sodipodi:nodetypes="ssssssssssssssssss" />
   <path
      d="m 164.94131,114.12702 c -9.678,0 -17.55,7.866 -17.55,17.534 v 27.445 c 0,9.669 7.872,17.535 17.55,17.535 h 27.47 c 9.678,0 17.55,-7.866 17.55,-17.535 v -27.445 c 0,-9.668 -7.872,-17.534 -17.55,-17.534 z"
      fill="#f2f2f2"

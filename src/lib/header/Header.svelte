@@ -14,8 +14,8 @@
 <ImportVariablesCSS />
 
 <!-- Content -->
-<nav>
-	<div class="content">
+<header>
+	<nav class="content">
 		<Logo />
 		<ul class="links">
 			<li>
@@ -32,8 +32,8 @@
 			</li>
 		</ul>
 		<MobileMenu />
-	</div>
-</nav>
+	</nav>
+</header>
 
 <style>
 	nav {
@@ -45,13 +45,14 @@
 	}
 
 	.content {
-		max-width: 1920px;
+		max-width: 1600px;
 		height: 100%;
 		margin: 0 auto;
+		padding: 0 40px;
 		display: grid;
 		grid-template-rows: 20px 40px;
-		grid-template-columns: 30px min-content 1fr min-content 30px;
-		grid-template-areas: '. . . . .' '. logo . links .';
+		grid-template-columns: min-content 1fr min-content;
+		grid-template-areas: '. . .' 'logo . links';
 		align-items: center;
 	}
 
@@ -77,8 +78,8 @@
 	@media only screen and (min-width: 600px) {
 		.content {
 			grid-template-rows: 40px 40px;
-			grid-template-areas: '. . . . .' '. logo . links .';
-			grid-template-columns: 60px min-content 1fr min-content 60px;
+			grid-template-areas: '. . .' 'logo . links';
+			grid-template-columns: min-content 1fr min-content;
 		}
 	}
 
@@ -89,7 +90,7 @@
 	}
 	@media only screen and (min-width: 1200px) {
 		.content {
-			grid-template-columns: 140px min-content 1fr min-content 140px;
+			grid-template-columns: min-content 1fr min-content;
 		}
 	}
 </style>
