@@ -1,9 +1,10 @@
 <script lang="ts">
 	export let href = '/';
 	export let empty = false;
+	export let fontSize = '16px';
 </script>
 
-<a {href} class:text={!empty}>
+<a {href} class:text={!empty} style="font-size: {fontSize}">
 	<slot />
 </a>
 
@@ -14,6 +15,6 @@
 		font-size: 16px;
 		line-height: 28px;
 		text-decoration-line: underline;
-		color: var(--color-black);
+		color: inherit;
 	}
 </style>

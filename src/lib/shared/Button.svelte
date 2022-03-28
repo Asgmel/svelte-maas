@@ -5,6 +5,7 @@
 	export let width = 'auto';
 	export let height = 'auto';
 	export let transparent = false;
+	export let fontSize = '16px';
 	export let onClick = () => {
 		console.log('test');
 	};
@@ -17,7 +18,7 @@
 		class:ghostButton
 		class:fillButton={!ghostButton}
 		class:transparent
-		style="width: {width}; height: {height}"
+		style="width: {width}; height: {height}; font-size: {fontSize}"
 	>
 		<slot />
 	</a>
@@ -28,7 +29,7 @@
 		class:fillButton={!ghostButton}
 		class:transparent
 		on:click={onClick}
-		style="width: {width}; height: {height}"
+		style="width: {width}; height: {height}; font-size: {fontSize}"
 	>
 		<slot />
 	</button>
@@ -46,6 +47,7 @@
 		font-size: 16px;
 		line-height: 24px;
 		grid-area: button;
+		text-align: center;
 	}
 
 	.ghostButton {
