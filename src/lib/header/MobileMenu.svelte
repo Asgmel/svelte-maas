@@ -1,7 +1,7 @@
 <script>
 	import Button from '$lib/shared/Button.svelte';
 	import Link from '$lib/shared/Link.svelte';
-	import Logo from '$lib/header/Logo.svelte';
+	import Logo from '$lib/shared/Logo.svelte';
 
 	let active = false;
 	let hideOverlay = false;

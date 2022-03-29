@@ -50,7 +50,7 @@
 		font-size: 24px;
 	}
 	.section {
-		padding: 40px 0;
+		padding: 100px 0;
 		width: 100%;
 		background-color: var(--color-darkblue);
 		display: grid;

@@ -2,7 +2,7 @@
 	import NormalizeCSS from '$lib/styles/NormalizeCSS.svelte';
 	import GlobalCSS from '$lib/styles/GlobalCSS.svelte';
 	import ImportVariablesCSS from '$lib/styles/ImportVariablesCSS.svelte';
-	import Logo from './Logo.svelte';
+	import Logo from '../shared/Logo.svelte';
 	import Button from '../shared/Button.svelte';
 	import Link from '../shared/Link.svelte';
 	import MobileMenu from './MobileMenu.svelte';

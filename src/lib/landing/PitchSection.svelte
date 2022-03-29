@@ -94,7 +94,7 @@
 
 	@media only screen and (min-width: 600px) {
 		.section {
-			padding: 20px 20px 200px 20px;
+			padding: 50px 20px 130px 20px;
 			grid-template-columns: 450px;
 		}
 		h1 {
@@ -104,7 +104,7 @@
 
 	@media only screen and (min-width: 900px) {
 		.section {
-			padding: 100px 20px 200px 20px;
+			padding: 100px 20px 180px 20px;
 			grid-template-columns: 380px 380px;
 			grid-template-rows: 1fr 1fr 1fr;
 			grid-template-areas: 'text1 img1' 'img2 text2' 'text3 img3';
