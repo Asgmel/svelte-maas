@@ -1,34 +1,26 @@
 <script lang="ts">
-	import NormalizeCSS from '$lib/styles/NormalizeCSS.svelte';
-	import GlobalCSS from '$lib/styles/GlobalCSS.svelte';
-	import ImportVariablesCSS from '$lib/styles/ImportVariablesCSS.svelte';
 	import Logo from '../shared/Logo.svelte';
 	import Button from '../shared/Button.svelte';
 	import Link from '../shared/Link.svelte';
 	import MobileMenu from './MobileMenu.svelte';
+	import { text } from '$lib/store/languageStore';
 </script>
 
-<!-- CSS -->
-<NormalizeCSS />
-<GlobalCSS />
-<ImportVariablesCSS />
-
-<!-- Content -->
 <header>
 	<nav class="content">
 		<Logo />
 		<ul class="links">
 			<li>
-				<Link href="/services">Services</Link>
+				<Link href="/services">{$text.shared.pages.services}</Link>
 			</li>
 			<li>
-				<Link href="/portfolio">Portfolio</Link>
+				<Link href="/portfolio">{$text.shared.pages.portfolio}</Link>
 			</li>
 			<li>
-				<Link href="/about">About Us</Link>
+				<Link href="/about">{$text.shared.pages.about}</Link>
 			</li>
 			<li class="button">
-				<Button link ghostButton>Contact Us</Button>
+				<Button link ghostButton>{$text.shared.pages.contact}</Button>
 			</li>
 		</ul>
 		<MobileMenu />
