@@ -4,6 +4,5 @@ export default {
 	'--color-white': '#E5E5E5',
 	'--color-lightblue': '#B8CDE1',
 	'--color-darkblue': '#496075',
-	'--header-height': '120px',
 	'--footer-height': '560px'
 };

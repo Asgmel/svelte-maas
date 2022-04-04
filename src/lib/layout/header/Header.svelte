@@ -9,8 +9,8 @@
 </script>
 
 <header class:transparent={$page.routeId === ''}>
-	<nav class="content">
-		<Logo light={$page.routeId !== ''} />
+	<nav>
+		<Logo link light={$page.routeId !== ''} />
 		<ul class="links">
 			<li class:light={$page.routeId !== ''}>
 				<Link href="/services">{$text.shared.pages.services}</Link>
@@ -25,22 +25,22 @@
 				<Button link ghostButton>{$text.shared.pages.contact}</Button>
 			</li>
 		</ul>
-		<MobileMenu />
+		<MobileMenu light={$page.routeId === ''} />
 	</nav>
 </header>
 
 <style>
 	header {
-		height: var(--header-height);
-		background-color: var(--color-darkblue);
+		height: 64px;
+		background-color: var(--color-black);
 	}
 
 	nav {
 		max-width: 1600px;
 		margin: 0 auto;
-		padding: 40px 0;
+		padding: 8px 20px;
 		display: grid;
-		grid-template-rows: 40px;
+		grid-template-rows: 48px;
 		grid-template-columns: min-content 1fr min-content;
 		grid-template-areas: 'logo . links';
 		align-items: center;
@@ -73,14 +73,21 @@
 		text-align: center;
 	}
 
+	@media only screen and (min-width: 600px) {
+		header {
+			height: 88px;
+		}
+		nav {
+			padding: 20px 40px;
+		}
+	}
+
 	@media only screen and (min-width: 900px) {
 		.links {
 			display: grid;
 		}
 	}
+
 	@media only screen and (min-width: 1200px) {
-		.content {
-			grid-template-columns: min-content 1fr min-content;
-		}
 	}
 </style>

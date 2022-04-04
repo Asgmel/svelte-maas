@@ -41,6 +41,44 @@ export const text = writable<ILanguage>({
 			hosting: ''
 		}
 	},
+	services: {
+		graphicDesign: {
+			title: '',
+			text: '',
+			img: '',
+			alt: ''
+		},
+		development: {
+			title: '',
+			text: '',
+			img: '',
+			alt: ''
+		},
+		seo: {
+			title: '',
+			text: '',
+			img: '',
+			alt: ''
+		},
+		cms: {
+			title: '',
+			text: '',
+			img: '',
+			alt: ''
+		},
+		techConsulting: {
+			title: '',
+			text: '',
+			img: '',
+			alt: ''
+		},
+		hosting: {
+			title: '',
+			text: '',
+			img: '',
+			alt: ''
+		}
+	},
 	footer: {
 		motto: '',
 		services: {

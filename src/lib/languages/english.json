@@ -37,6 +37,44 @@
 			"hosting": "Hosting"
 		}
 	},
+	"services": {
+		"graphicDesign": {
+			"title": "Graphic Design",
+			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
+			"img": "/images/service_graphic_design_drawing.svg",
+			"alt": "Drawing of a woman watching a piece of art"
+		},
+		"development": {
+			"title": "Development",
+			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
+			"img": "/images/service_development_drawing.svg",
+			"alt": "Drawing of a woman holding a cellphone with code on the screen"
+		},
+		"seo": {
+			"title": "SEO",
+			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
+			"img": "/images/service_seo_drawing.svg",
+			"alt": "Drawing of a woman looking at some documents with a magnifying glass"
+		},
+		"cms": {
+			"title": "CMS",
+			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
+			"img": "/images/service_cms_drawing.svg",
+			"alt": "Drawing of a woman looking at two images"
+		},
+		"techConsulting": {
+			"title": "Tech Consulting",
+			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
+			"img": "/images/service_tech_consulting_drawing.svg",
+			"alt": "Drawing of a man and a woman carrying some tech stuff"
+		},
+		"hosting": {
+			"title": "Hosting",
+			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
+			"img": "/images/service_hosting_drawing.svg",
+			"alt": "Drawing of a woman looking at some servers"
+		}
+	},
 	"footer": {
 		"motto": "All-in-one place for your web design and development needs.",
 		"services": {

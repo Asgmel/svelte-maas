@@ -37,6 +37,44 @@ export interface ILanguage {
 			hosting: string;
 		};
 	};
+	services: {
+		graphicDesign: {
+			title: string;
+			text: string;
+			img: string;
+			alt: string;
+		};
+		development: {
+			title: string;
+			text: string;
+			img: string;
+			alt: string;
+		};
+		seo: {
+			title: string;
+			text: string;
+			img: string;
+			alt: string;
+		};
+		cms: {
+			title: string;
+			text: string;
+			img: string;
+			alt: string;
+		};
+		techConsulting: {
+			title: string;
+			text: string;
+			img: string;
+			alt: string;
+		};
+		hosting: {
+			title: string;
+			text: string;
+			img: string;
+			alt: string;
+		};
+	};
 	footer: {
 		motto: string;
 		services: {

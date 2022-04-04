@@ -34,7 +34,7 @@
 	.gradient {
 		width: 100%;
 		height: 222px;
-		background: linear-gradient(0deg, #25313c 24.77%, rgba(37, 49, 60, 0) 100%);
+		background: linear-gradient(360deg, #25313c 0%, rgba(37, 49, 60, 0) 100%);
 		grid-area: gradient;
 	}
 
