@@ -2,9 +2,9 @@
 	import NormalizeCSS from '$lib/styles/NormalizeCSS.svelte';
 	import GlobalCSS from '$lib/styles/GlobalCSS.svelte';
 	import ImportVariablesCSS from '$lib/styles/ImportVariablesCSS.svelte';
-	import Logo from '../shared/Logo.svelte';
-	import Button from '../shared/Button.svelte';
-	import Link from '../shared/Link.svelte';
+	import Logo from '../../shared/Logo.svelte';
+	import Button from '../../shared/Button.svelte';
+	import Link from '../../shared/Link.svelte';
 	import MobileMenu from './MobileMenu.svelte';
 </script>
 
@@ -36,23 +36,19 @@
 </header>
 
 <style>
-	nav {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
+	header {
 		height: var(--header-height);
+		background-color: var(--color-darkblue);
 	}
 
 	.content {
 		max-width: 1600px;
-		height: 100%;
 		margin: 0 auto;
-		padding: 0 40px;
+		padding: 40px 0;
 		display: grid;
-		grid-template-rows: 20px 40px;
+		grid-template-rows: 40px;
 		grid-template-columns: min-content 1fr min-content;
-		grid-template-areas: '. . .' 'logo . links';
+		grid-template-areas: 'logo . links';
 		align-items: center;
 	}
 
@@ -73,14 +69,6 @@
 		align-items: center;
 		height: 100%;
 		list-style-type: none;
-	}
-
-	@media only screen and (min-width: 600px) {
-		.content {
-			grid-template-rows: 40px 40px;
-			grid-template-areas: '. . .' 'logo . links';
-			grid-template-columns: min-content 1fr min-content;
-		}
 	}
 
 	@media only screen and (min-width: 900px) {
