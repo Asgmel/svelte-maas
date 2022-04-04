@@ -3,6 +3,7 @@
 	import Button from '../shared/Button.svelte';
 	import Link from '../shared/Link.svelte';
 	import MobileMenu from './MobileMenu.svelte';
+	import LanguageSelector from './LanguageSelector.svelte';
 	import { text } from '$lib/store/languageStore';
 </script>
 
@@ -28,7 +29,7 @@
 </header>
 
 <style>
-	nav {
+	header {
 		position: absolute;
 		left: 0;
 		right: 0;
@@ -38,7 +39,6 @@
 
 	.content {
 		max-width: 1600px;
-		height: 100%;
 		margin: 0 auto;
 		padding: 0 40px;
 		display: grid;
@@ -51,8 +51,8 @@
 	.links {
 		display: none;
 		grid-area: links;
-		grid-template-columns: 64px 66px 72px 117px;
-		column-gap: 30px;
+		grid-template-columns: repeat(4, min-content);
+		column-gap: 40px;
 		text-align: center;
 	}
 

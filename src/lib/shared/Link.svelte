@@ -16,5 +16,9 @@
 		line-height: 28px;
 		text-decoration-line: underline;
 		color: inherit;
+		white-space: nowrap;
+		text-underline-offset: 2px;
+		display: flex;
+		text-decoration: none;
 	}
 </style>
