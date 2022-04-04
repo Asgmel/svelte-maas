@@ -1,34 +1,28 @@
 <script lang="ts">
-	import NormalizeCSS from '$lib/styles/NormalizeCSS.svelte';
-	import GlobalCSS from '$lib/styles/GlobalCSS.svelte';
-	import ImportVariablesCSS from '$lib/styles/ImportVariablesCSS.svelte';
-	import Logo from '../../shared/Logo.svelte';
-	import Button from '../../shared/Button.svelte';
-	import Link from '../../shared/Link.svelte';
+	import Logo from '$lib/shared/Logo.svelte';
+	import Button from '$lib/shared/Button.svelte';
+	import Link from '$lib/shared/Link.svelte';
 	import MobileMenu from './MobileMenu.svelte';
+	import LanguageSelector from './LanguageSelector.svelte';
+	import { text } from '$lib/store/languageStore';
+	import { page } from '$app/stores';
 </script>
 
-<!-- CSS -->
-<NormalizeCSS />
-<GlobalCSS />
-<ImportVariablesCSS />
-
-<!-- Content -->
-<header>
+<header class:transparent={$page.routeId === ''}>
 	<nav class="content">
-		<Logo />
+		<Logo light={$page.routeId !== ''} />
 		<ul class="links">
-			<li>
-				<Link href="/services">Services</Link>
+			<li class:light={$page.routeId !== ''}>
+				<Link href="/services">{$text.shared.pages.services}</Link>
 			</li>
-			<li>
-				<Link href="/portfolio">Portfolio</Link>
+			<li class:light={$page.routeId !== ''}>
+				<Link href="/portfolio">{$text.shared.pages.portfolio}</Link>
 			</li>
-			<li>
-				<Link href="/about">About Us</Link>
+			<li class:light={$page.routeId !== ''}>
+				<Link href="/about">{$text.shared.pages.about}</Link>
 			</li>
 			<li class="button">
-				<Button link ghostButton>Contact Us</Button>
+				<Button link ghostButton>{$text.shared.pages.contact}</Button>
 			</li>
 		</ul>
 		<MobileMenu />
@@ -41,7 +35,7 @@
 		background-color: var(--color-darkblue);
 	}
 
-	.content {
+	nav {
 		max-width: 1600px;
 		margin: 0 auto;
 		padding: 40px 0;
@@ -50,14 +44,6 @@
 		grid-template-columns: min-content 1fr min-content;
 		grid-template-areas: 'logo . links';
 		align-items: center;
-	}
-
-	.links {
-		display: none;
-		grid-area: links;
-		grid-template-columns: 64px 66px 72px 117px;
-		column-gap: 30px;
-		text-align: center;
 	}
 
 	ul {
@@ -69,6 +55,22 @@
 		align-items: center;
 		height: 100%;
 		list-style-type: none;
+	}
+
+	.transparent {
+		background-color: rgba(0, 0, 0, 0);
+	}
+
+	.light {
+		color: var(--color-white);
+	}
+
+	.links {
+		display: none;
+		grid-area: links;
+		grid-template-columns: repeat(4, min-content);
+		column-gap: 40px;
+		text-align: center;
 	}
 
 	@media only screen and (min-width: 900px) {

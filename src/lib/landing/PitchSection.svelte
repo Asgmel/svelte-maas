@@ -1,61 +1,45 @@
 <script lang="ts">
-	import Link from '$lib/shared/Link.svelte';
+	import { text } from '$lib/store/languageStore';
+	const sections = [
+		{
+			heading: $text.landing.pitch.one.heading,
+			text: $text.landing.pitch.one.text,
+			img: '/images/design_drawing.svg'
+		},
+		{
+			heading: $text.landing.pitch.two.heading,
+			text: $text.landing.pitch.two.text,
+			img: '/images/mobile_drawing.svg'
+		},
+		{
+			heading: $text.landing.pitch.three.heading,
+			text: $text.landing.pitch.three.text,
+			img: '/images/SEO_drawing.svg'
+		}
+	];
 </script>
 
 <div class="section">
-	<div class="text container" style="grid-area: text1">
-		<h1>Custom Made Designs</h1>
-		<p>
-			We tailor every website to your needs and wishes to make your ideas come to life. We can do
-			the whole design and development process for you, to give you more time to focus on other
-			areas of your business.
-		</p>
-		<div>
-			<Link>Learn More</Link>
-			<Link>-></Link>
+	{#each sections as section, i}
+		<div class="text container" style="grid-area: text{i + 1}">
+			<h1>{section.heading}</h1>
+			<p>{section.text}</p>
+			<div class="linkRow">
+				<div class="linkContainer">
+					<a href="/" class="link"
+						>Learn More
+						<div class="arrow" />
+					</a>
+				</div>
+			</div>
 		</div>
-	</div>
-	<img
-		src="/images/design_drawing.svg"
-		alt="Drawing of a woman designing something"
-		class="container"
-		style="grid-area: img1"
-	/>
-	<img
-		src="/images/mobile_drawing.svg"
-		alt="Drawing of a woman looking at her cellphone"
-		class="container"
-		style="grid-area: img2"
-	/>
-	<div class="text container" style="grid-area: text2">
-		<h1>Modern and Responsive Websites</h1>
-		<p>
-			All our websites are made according to the current web-development standards with responsive
-			design. This means the website will look beautiful on all screens, be it phone, tablet or
-			desktop.
-		</p>
-		<div>
-			<Link>Learn More</Link>
-			<Link>-></Link>
-		</div>
-	</div>
-	<div class="text container" style="grid-area: text3">
-		<h1>Search Engine Optimized</h1>
-		<p>
-			Our websites are search engine optimized (SEO), which ensures that they appear and look good
-			in searches on all popular search engines like Google, Bing and DuckDuckGo.
-		</p>
-		<div>
-			<Link>Learn More</Link>
-			<Link>-></Link>
-		</div>
-	</div>
-	<img
-		src="/images/SEO_drawing.svg"
-		alt="Drawing of a woman building something with a looking glass (search icon)"
-		class="container"
-		style="grid-area: img3"
-	/>
+		<img
+			src={section.img}
+			alt="Drawing of a woman designing something"
+			class="container"
+			style="grid-area: img{i + 1}"
+		/>
+	{/each}
 </div>
 
 <style>
@@ -91,6 +75,29 @@
 		color: var(--color-white);
 		margin: 20px 0;
 	}
+	.linkRow {
+		display: flex;
+	}
+	.link {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 28px;
+		text-decoration-line: underline;
+		color: inherit;
+		white-space: nowrap;
+		text-underline-offset: 2px;
+		display: flex;
+	}
+	.link:hover > .arrow {
+		animation: arrowMovement 1s infinite;
+	}
+	.arrow {
+		width: 30px;
+		height: 25px;
+		margin: 4px 5px 2px 6px;
+		background: no-repeat center url('/icons/mi_arrow_right_alt.svg');
+		background-size: cover;
+	}
 
 	@media only screen and (min-width: 600px) {
 		.section {
@@ -119,6 +126,7 @@
 	@media only screen and (min-width: 1200px) {
 		h1 {
 			font-size: 48px;
+			line-height: 54px;
 		}
 		p {
 			font-size: 18px;
@@ -133,6 +141,18 @@
 	@media only screen and (min-width: 1300px) {
 		.section {
 			column-gap: 200px;
+		}
+	}
+
+	@keyframes arrowMovement {
+		0% {
+			margin: 4px 5px 2px 6px;
+		}
+		50% {
+			margin: 4px 0px 2px 11px;
+		}
+		100% {
+			margin: 4px 5px 2px 6px;
 		}
 	}
 </style>

@@ -37,8 +37,9 @@
 
 <style>
 	a {
-		padding: 8px 0;
+		padding: 10px;
 		text-decoration: none;
+		white-space: nowrap;
 	}
 	.button {
 		border-radius: 4px;

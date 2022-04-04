@@ -15,6 +15,7 @@
 	.sectionOne {
 		width: 100%;
 		background-color: var(--color-black);
+		margin-top: -120px;
 	}
 
 	.content {

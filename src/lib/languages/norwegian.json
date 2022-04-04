@@ -1,0 +1,67 @@
+{
+	"shared": {
+		"pages": {
+			"services": "Produkter",
+			"portfolio": "Portfolio",
+			"about": "Om Oss",
+			"contact": "Kontakt Oss"
+		}
+	},
+	"landing": {
+		"hero": {
+			"heading": "Stressfri Webutvikling",
+			"text": " place for your web design and development needs."
+		},
+		"pitch": {
+			"one": {
+				"heading": "Custom Made Designs",
+				"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business."
+			},
+			"two": {
+				"heading": "Modern and Responsive Websites",
+				"text": "All our websites are made according to the current web-development standards with responsive design. This means the website will look beautiful on all screens, be it phone, tablet or desktop."
+			},
+			"three": {
+				"heading": "Search Engine Optimized",
+				"text": "Our websites are search engine optimized (SEO), which ensures that they appear and look good in searches on all popular search engines like Google, Bing and DuckDuckGo."
+			},
+			"learnMore": "Learn More"
+		},
+		"services": {
+			"heading": "Our Services",
+			"graphicDesign": "Graphic Design",
+			"webDevelopment": "Web Development",
+			"seo": "SEO",
+			"cms": "CMS",
+			"techConsulting": "Tech Consulting",
+			"hosting": "Hosting"
+		}
+	},
+	"footer": {
+		"motto": "All-in-one place for your web design and development needs.",
+		"services": {
+			"development": "Development",
+			"design": "Design",
+			"seo": "SEO",
+			"cms": "CMS",
+			"consulting": "Consulting",
+			"hosting": "Hosting"
+		},
+		"portfolio": {
+			"portfolioOne": "Portfolio 1",
+			"portfolioTwo": "Portfolio 2",
+			"portfolioThree": "Portfolio 3"
+		},
+		"about": {
+			"faq": "FAQ",
+			"company": "The Company",
+			"people": "The people",
+			"tech": "The Tech"
+		},
+		"contact": {
+			"email": "post@maasmedia.no",
+			"phone": "+47 902 74 040",
+			"address": "Hamnesvegen 454, 6650, Surnadal, Norway"
+		}
+	}
+}

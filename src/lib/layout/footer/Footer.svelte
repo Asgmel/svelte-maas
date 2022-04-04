@@ -49,7 +49,7 @@
 	}
 	h4 {
 		color: var(--color-white);
-		margin: 25px 0 10px 0;
+		margin: 0 0 10px 0;
 		font-size: 18px;
 	}
 	.content {
@@ -58,7 +58,7 @@
 		grid-template-areas: 'logo' 'motto' 'Services' 'Portfolio' 'About' 'Contact' 'copyright';
 	}
 	.caption {
-		color: rgba(255, 255, 255, 0.7);
+		color: rgba(255, 255, 255, 0.6);
 		font-size: 14px;
 		line-height: 20px;
 	}
@@ -66,14 +66,17 @@
 		grid-area: motto;
 	}
 	.copyright {
-		margin-top: 40px;
 		grid-area: copyright;
+		margin-top: 40px;
 	}
 	.link {
 		text-decoration: none;
 	}
 	.link:hover {
 		color: var(--color-white);
+	}
+	.linkSection {
+		margin: 20px 0;
 	}
 	@media only screen and (min-width: 600px) {
 		.content {
@@ -86,19 +89,25 @@
 	@media only screen and (min-width: 900px) {
 		.content {
 			width: 810px;
-			grid-template-areas: 'logo . . .' 'motto motto . .' 'Services Portfolio About Contact' 'copyright . . .';
+			grid-template-areas: 'logo . . .' 'motto motto . .' 'Services Portfolio About Contact' 'copyright copyright . .';
 			grid-template-columns: repeat(4, 160px);
 			column-gap: 56px;
 		}
 		.motto {
 			padding-right: 150px;
 		}
+		.linkSection {
+			margin: 40px 0;
+		}
+		.copyright {
+			margin-top: 0;
+		}
 	}
 
 	@media only screen and (min-width: 1200px) {
 		.content {
 			width: 1100px;
-			grid-template-areas: 'logo . . . .' 'motto . . . .' '. Services Portfolio About Contact' 'copyright . . . .';
+			grid-template-areas: 'logo . . . .' 'motto . . . .' '. Services Portfolio About Contact' 'copyright copyright . . .';
 			grid-template-columns: 380px repeat(4, 160px);
 			column-gap: 20px;
 		}
@@ -110,11 +119,11 @@
 	@media only screen and (min-width: 1300px) {
 		.content {
 			width: 1200px;
-			grid-template-areas: 'logo . . . .' 'motto . . . .' '. Services Portfolio About Contact' 'copyright . . . .';
+			grid-template-areas: 'logo . . . .' 'motto . . . .' '. Services Portfolio About Contact' 'copyright copyright . . .';
 			grid-template-columns: 480px repeat(4, 160px);
 		}
 		.motto {
-			padding-right: 200px;
+			padding-right: 260px;
 		}
 	}
 </style>
