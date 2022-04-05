@@ -22,9 +22,14 @@
 </script>
 
 <Container>
-	<div class="section">
-		{#each sections as section, i}
-			<div class="textContainer" style="grid-area: text{i + 1}">
+	{#each sections as section, i}
+		<div
+			class="section"
+			class:top={i == 0}
+			class:bottom={i == sections.length - 1}
+			class:reverse={i == 1}
+		>
+			<div class="textContainer">
 				<h1>{section.heading}</h1>
 				<p>{section.text}</p>
 				<div class="linkRow">
@@ -36,37 +41,43 @@
 					</div>
 				</div>
 			</div>
-			<div class="imgContainer" style="justify-content: {i == 1 ? 'left' : 'right'};">
-				<img
-					src={section.img}
-					alt="Drawing of a woman designing something"
-					class="box"
-					style="grid-area: img{i + 1}"
-				/>
+			<div class="imgContainer" class:left={i == 1}>
+				<img src={section.img} alt="Drawing of a woman designing something" />
 			</div>
-		{/each}
-	</div>
+		</div>
+	{/each}
 </Container>
 
 <style>
 	.section {
 		display: grid;
 		grid-template-columns: 300px;
-		grid-template-areas: 'text1' 'img1' 'text2' 'img2' 'text3' 'img3';
+		grid-template-areas: 'text' 'img';
+		row-gap: 40px;
 		justify-content: center;
-		row-gap: 60px;
 	}
 	.textContainer {
+		grid-area: text;
 		display: flex;
 		flex-direction: column;
 		color: var(--color-pink);
 	}
 	.imgContainer {
+		grid-area: img;
 		display: flex;
 		justify-content: center;
 	}
+	.top {
+		margin-top: 40px;
+	}
+	.bottom {
+		margin-bottom: 75px;
+	}
+	.left {
+		justify-content: left !important;
+	}
 	img {
-		max-width: 300px;
+		max-width: 100%;
 		max-height: 300px;
 	}
 	h1 {
@@ -106,10 +117,9 @@
 	@media only screen and (min-width: 600px) {
 		.section {
 			grid-template-columns: 450px;
-			row-gap: 75px;
+			row-gap: 50px;
 		}
 		img {
-			max-width: 450px;
 			max-height: 450px;
 		}
 		h1 {
@@ -118,25 +128,35 @@
 	}
 
 	@media only screen and (min-width: 900px) {
+		.imgContainer {
+			justify-content: right;
+		}
 		img {
 			max-width: 380px;
 			max-height: 380px;
 		}
 		.section {
 			grid-template-columns: 380px 380px;
-			grid-template-rows: 1fr 1fr 1fr;
-			grid-template-areas: 'text1 img1' 'img2 text2' 'text3 img3';
+			grid-template-areas: 'text img';
 			column-gap: 50px;
+		}
+		.reverse {
+			grid-template-areas: 'img text';
 		}
 
 		h1 {
 			font-size: 35px;
 		}
+		.top {
+			margin-top: 75px;
+		}
+		.bottom {
+			margin-bottom: 75px;
+		}
 	}
 
 	@media only screen and (min-width: 1200px) {
 		img {
-			max-width: 500px;
 			max-height: 500px;
 		}
 		h1 {
@@ -149,7 +169,6 @@
 		.section {
 			grid-template-columns: 500px 500px;
 			column-gap: 100px;
-			row-gap: 100px;
 		}
 	}
 

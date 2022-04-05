@@ -1,56 +1,51 @@
 <script>
 	import Container from '$lib/shared/Container.svelte';
+	import ContentBox from '$lib/shared/ContentBox.svelte';
+	import PageHeading from '$lib/shared/PageHeading.svelte';
 	import { text } from '$lib/store/languageStore';
 
 	const sections = [
 		{
+			light: false,
+			data: $text.services.graphicDesign
+		},
+		{
 			light: true,
-			rows: [$text.services.graphicDesign, $text.services.development]
+			data: $text.services.development
 		},
 		{
 			light: false,
-			rows: [$text.services.seo, $text.services.cms]
+			data: $text.services.seo
 		},
 		{
 			light: true,
-			rows: [$text.services.techConsulting, $text.services.hosting]
+			data: $text.services.cms
+		},
+		{
+			light: false,
+			data: $text.services.techConsulting
+		},
+		{
+			light: true,
+			data: $text.services.hosting
 		}
 	];
 </script>
 
-{#each sections as section}
+{#each sections as section, i}
 	<Container light={section.light}>
-		{#each section.rows as row}
-			<div class="text">
-				<h2>{row.title}</h2>
-				<p>{row.text}</p>
-			</div>
-			<div class="image">
-				<img src={row.img} alt={row.alt} />
-			</div>
-		{/each}
+		{#if i === 0}
+			<PageHeading
+				title="Services"
+				description="A quick overview of the services we can help you with. You can contact us to learn more and discuss your particular needs."
+			/>
+		{/if}
+		<ContentBox
+			data={section.data}
+			reverse={section.light}
+			top
+			bottom
+			justifyImage={!section.light ? 'right' : 'left'}
+		/>
 	</Container>
 {/each}
-
-<style>
-	h2 {
-		font-weight: 500;
-		font-size: 35px;
-		line-height: 55px;
-		color: var(--color-pink);
-	}
-	p {
-		font-size: 16px;
-		color: var(--color-white);
-	}
-	img {
-		max-width: 100%;
-	}
-	.text {
-		display: grid;
-		row-gap: 10px;
-	}
-	.image {
-		margin: 40px 0;
-	}
-</style>

@@ -79,6 +79,31 @@ export const text = writable<ILanguage>({
 			alt: ''
 		}
 	},
+	about: {
+		company: {
+			title: '',
+			text: '',
+			img: '',
+			alt: ''
+		},
+		tech: {
+			title: '',
+			text: '',
+			img: '',
+			alt: ''
+		},
+		faq: {
+			title: '',
+			questions: [
+				{
+					question: '',
+					answer: ''
+				}
+			],
+			img: '',
+			alt: ''
+		}
+	},
 	footer: {
 		motto: '',
 		services: {

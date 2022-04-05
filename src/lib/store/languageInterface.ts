@@ -75,6 +75,29 @@ export interface ILanguage {
 			alt: string;
 		};
 	};
+	about: {
+		company: {
+			title: string;
+			text: string;
+			img: string;
+			alt: string;
+		};
+		tech: {
+			title: string;
+			text: string;
+			img: string;
+			alt: string;
+		};
+		faq: {
+			title: string;
+			questions: {
+				question: string;
+				answer: string;
+			}[];
+			img: string;
+			alt: string;
+		};
+	};
 	footer: {
 		motto: string;
 		services: {

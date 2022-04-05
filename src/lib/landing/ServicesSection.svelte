@@ -1,38 +1,41 @@
 <script lang="ts">
 	import Button from '$lib/shared/Button.svelte';
 	import Card from '$lib/shared/Card.svelte';
+	import Container from '$lib/shared/Container.svelte';
 </script>
 
-<div class="section">
-	<h1>Our Services</h1>
-	<div class="cardContainer">
-		<Card>
-			<div class="icon" style="background-image: url(&quot;/icons/mi_photo.svg&quot;)" />
-			<h3>Graphic Design</h3>
-		</Card>
-		<Card>
-			<div class="icon" style="background-image: url(&quot;/icons/mi_globe.svg&quot;)" />
-			<h3>Web Development</h3>
-		</Card>
-		<Card>
-			<div class="icon" style="background-image: url(&quot;/icons/mi_pageview.svg&quot;)" />
-			<h3>SEO</h3>
-		</Card>
-		<Card>
-			<div class="icon" style="background-image: url(&quot;/icons/mi_media.svg&quot;)" />
-			<h3>CMS</h3>
-		</Card>
-		<Card>
-			<div class="icon" style="background-image: url(&quot;/icons/mi_group.svg&quot;)" />
-			<h3>Tech Consulting</h3>
-		</Card>
-		<Card>
-			<div class="icon" style="background-image: url(&quot;/icons/mi_cloud.svg&quot;)" />
-			<h3>Hosting</h3>
-		</Card>
+<Container light>
+	<div class="section">
+		<h1>Our Services</h1>
+		<div class="cardContainer">
+			<Card>
+				<div class="icon" style="background-image: url(&quot;/icons/mi_photo.svg&quot;)" />
+				<h3>Graphic Design</h3>
+			</Card>
+			<Card>
+				<div class="icon" style="background-image: url(&quot;/icons/mi_globe.svg&quot;)" />
+				<h3>Web Development</h3>
+			</Card>
+			<Card>
+				<div class="icon" style="background-image: url(&quot;/icons/mi_pageview.svg&quot;)" />
+				<h3>SEO</h3>
+			</Card>
+			<Card>
+				<div class="icon" style="background-image: url(&quot;/icons/mi_media.svg&quot;)" />
+				<h3>CMS</h3>
+			</Card>
+			<Card>
+				<div class="icon" style="background-image: url(&quot;/icons/mi_group.svg&quot;)" />
+				<h3>Tech Consulting</h3>
+			</Card>
+			<Card>
+				<div class="icon" style="background-image: url(&quot;/icons/mi_cloud.svg&quot;)" />
+				<h3>Hosting</h3>
+			</Card>
+		</div>
+		<Button width="220px" height="70px">Contact Us</Button>
 	</div>
-	<Button width="220px" height="70px">Contact Us</Button>
-</div>
+</Container>
 
 <style>
 	h1 {
@@ -40,24 +43,21 @@
 		grid-area: title;
 		color: var(--color-white);
 	}
-	.icon {
-		width: 76px;
-		height: 76px;
-	}
 	h3 {
 		color: var(--color-white);
 		font-weight: 400;
 		font-size: 24px;
 	}
 	.section {
-		padding: 100px 0;
-		width: 100%;
-		background-color: var(--color-darkblue);
-		display: grid;
-		grid-template-areas: 'title' 'cards' 'button';
-		row-gap: 40px;
-		align-content: center;
-		justify-items: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 50px;
+		padding: 40px 0 70px 0;
+	}
+	.icon {
+		width: 76px;
+		height: 76px;
 	}
 	.cardContainer {
 		grid-area: cards;
