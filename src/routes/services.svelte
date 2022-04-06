@@ -32,14 +32,11 @@
 	];
 </script>
 
+<Container light>
+	<PageHeading title="Services" />
+</Container>
 {#each sections as section, i}
 	<Container light={section.light}>
-		{#if i === 0}
-			<PageHeading
-				title="Services"
-				description="A quick overview of the services we can help you with. You can contact us to learn more and discuss your particular needs."
-			/>
-		{/if}
 		<ContentBox
 			data={section.data}
 			reverse={section.light}

@@ -2,23 +2,7 @@
 	import { text } from '$lib/store/languageStore';
 	import Container from '$lib/shared/Container.svelte';
 
-	const sections = [
-		{
-			heading: $text.landing.pitch.one.heading,
-			text: $text.landing.pitch.one.text,
-			img: '/images/design_drawing.svg'
-		},
-		{
-			heading: $text.landing.pitch.two.heading,
-			text: $text.landing.pitch.two.text,
-			img: '/images/mobile_drawing.svg'
-		},
-		{
-			heading: $text.landing.pitch.three.heading,
-			text: $text.landing.pitch.three.text,
-			img: '/images/SEO_drawing.svg'
-		}
-	];
+	const sections = [$text.landing.pitch.one, $text.landing.pitch.two, $text.landing.pitch.three];
 </script>
 
 <Container>
@@ -42,7 +26,7 @@
 				</div>
 			</div>
 			<div class="imgContainer" class:left={i == 1}>
-				<img src={section.img} alt="Drawing of a woman designing something" />
+				<img src={section.img} alt={section.alt} />
 			</div>
 		</div>
 	{/each}

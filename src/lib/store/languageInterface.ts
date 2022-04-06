@@ -16,14 +16,20 @@ export interface ILanguage {
 			one: {
 				heading: string;
 				text: string;
+				img: string;
+				alt: string;
 			};
 			two: {
 				heading: string;
 				text: string;
+				img: string;
+				alt: string;
 			};
 			three: {
 				heading: string;
 				text: string;
+				img: string;
+				alt: string;
 			};
 			learnMore: string;
 		};
@@ -97,6 +103,16 @@ export interface ILanguage {
 			img: string;
 			alt: string;
 		};
+	};
+	portfolio: {
+		items: {
+			title: string;
+			description: string;
+			tags: string;
+			img: string;
+			alt: string;
+			url: string;
+		}[];
 	};
 	footer: {
 		motto: string;

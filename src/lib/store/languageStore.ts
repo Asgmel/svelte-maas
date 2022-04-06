@@ -19,15 +19,21 @@ export const text = writable<ILanguage>({
 		pitch: {
 			one: {
 				heading: '',
-				text: ''
+				text: '',
+				img: '',
+				alt: ''
 			},
 			two: {
 				heading: '',
-				text: ''
+				text: '',
+				img: '',
+				alt: ''
 			},
 			three: {
 				heading: '',
-				text: ''
+				text: '',
+				img: '',
+				alt: ''
 			},
 			learnMore: ''
 		},
@@ -103,6 +109,9 @@ export const text = writable<ILanguage>({
 			img: '',
 			alt: ''
 		}
+	},
+	portfolio: {
+		items: []
 	},
 	footer: {
 		motto: '',

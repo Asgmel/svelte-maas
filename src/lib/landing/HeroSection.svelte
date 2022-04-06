@@ -21,7 +21,7 @@
 	.content {
 		width: 100%;
 		height: calc(100vh + 100px);
-		background: url('/images/Mountains_large.jpg') no-repeat center center;
+		background: url('/images/landing/Mountains_large.jpg') no-repeat center center;
 		background-size: cover;
 		display: grid;
 		grid-template-columns: 1fr 320px 1fr;

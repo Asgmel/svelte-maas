@@ -15,15 +15,21 @@
 		"pitch": {
 			"one": {
 				"heading": "Custom Made Designs",
-				"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business."
+				"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business.",
+				"img": "/images/landing/landing_design_drawing.svg",
+				"alt": "Drawing of a woman designing something."
 			},
 			"two": {
 				"heading": "Modern and Responsive Websites",
-				"text": "All our websites are made according to the current web-development standards with responsive design. This means the website will look beautiful on all screens, be it phone, tablet or desktop."
+				"text": "All our websites are made according to the current web-development standards with responsive design. This means the website will look beautiful on all screens, be it phone, tablet or desktop.",
+				"img": "/images/landing/landing_responsive_drawing.svg",
+				"alt": "Drawing of a woman looking at responsive design."
 			},
 			"three": {
 				"heading": "Search Engine Optimized",
-				"text": "Our websites are search engine optimized (SEO), which ensures that they appear and look good in searches on all popular search engines like Google, Bing and DuckDuckGo."
+				"text": "Our websites are search engine optimized (SEO), which ensures that they appear and look good in searches on all popular search engines like Google, Bing and DuckDuckGo.",
+				"img": "/images/landing/landing_seo_drawing.svg",
+				"alt": "Drawing of a woman searching for something."
 			},
 			"learnMore": "Learn More"
 		},
@@ -41,37 +47,37 @@
 		"graphicDesign": {
 			"title": "Graphic Design",
 			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
-			"img": "/images/service_graphic_design_drawing.svg",
+			"img": "/images/services/service_graphic_design_drawing.svg",
 			"alt": "Drawing of a woman watching a piece of art"
 		},
 		"development": {
 			"title": "Development",
 			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
-			"img": "/images/service_development_drawing.svg",
+			"img": "/images/services/service_development_drawing.svg",
 			"alt": "Drawing of a woman holding a cellphone with code on the screen"
 		},
 		"seo": {
 			"title": "SEO",
 			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
-			"img": "/images/service_seo_drawing.svg",
+			"img": "/images/services/service_seo_drawing.svg",
 			"alt": "Drawing of a woman looking at some documents with a magnifying glass"
 		},
 		"cms": {
 			"title": "CMS",
 			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
-			"img": "/images/service_cms_drawing.svg",
+			"img": "/images/services/service_cms_drawing.svg",
 			"alt": "Drawing of a woman looking at two images"
 		},
 		"techConsulting": {
 			"title": "Tech Consulting",
 			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
-			"img": "/images/service_tech_consulting_drawing.svg",
+			"img": "/images/services/service_tech_consulting_drawing.svg",
 			"alt": "Drawing of a man and a woman carrying some tech stuff"
 		},
 		"hosting": {
 			"title": "Hosting",
 			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
-			"img": "/images/service_hosting_drawing.svg",
+			"img": "/images/services/service_hosting_drawing.svg",
 			"alt": "Drawing of a woman looking at some servers"
 		}
 	},
@@ -79,13 +85,13 @@
 		"company": {
 			"title": "The Company",
 			"text": "“maas media” was started in 2022 by Asgeir who is a professional full-stack developer and freelance designer. The company visuon  is to help people and businesses establish a strong online presence for their businesses and passion projects.\n\nThe company is located in Surnadal which is a small town in the middle of Norway, but takes on jobs from all over the world.  ",
-			"img": "/images/drawing_company.svg",
+			"img": "/images/about/about_company_drawing.svg",
 			"alt": "Drawing of a man looking at a map of the earth with a dot on Norway."
 		},
 		"tech": {
 			"title": "The Tech",
 			"text": "We design and develop all our client websites from scratch using industry standard tools and tech.  The design process is done in cooperation with the client using Figma, then the website is developed using Svelte. If the client has any special requirements for the framework we are also able to develop the website in React or Vuejs. All our websites that we host are hosted in the cloud on Digitalocean.",
-			"img": "/images/drawing_tech.svg",
+			"img": "/images/about/about_tech_drawing.svg",
 			"alt": "Drawing of a man sitting at a computer, coding a website."
 		},
 		"faq": {
@@ -105,12 +111,48 @@
 				},
 				{
 					"question": "Can I host the websites you make myself?",
-					"answer": "Yes. If you don’t want us to do the hosting, we can send you all the source code for your website so that you can choose your own hosting provider."
+					"answer": "Yes. If you don't want us to do the hosting, we can send you all the source code for your website so that you can choose your own hosting provider."
 				}
 			],
-			"img": "/images/drawing_faq.svg",
+			"img": "/images/about/about_faq_drawing.svg",
 			"alt": "Drawing of a man holding boxes with questions in them."
 		}
+	},
+	"portfolio": {
+		"items": [
+			{
+				"title": "Airbnb",
+				"description": "Rental website for houses and cabins across the world. Developed entirely by us",
+				"tags": "UI/UX Design, Website Development, Hosting",
+				"img": "/images/portfolio/portfolio_airbnb_photo.jpg",
+				"alt": "Image of the Airbnb website.",
+				"url": "https://airbnb.com"
+			},
+			{
+				"title": "Todoist",
+				"description": "Website for tracking todos. The users can create both list and kanban boards.",
+				"tags": "UI/UX Design, Website Development, Hosting",
+				"img": "/images/portfolio/portfolio_todoist_photo.jpg",
+				"alt": "Image of the Todoist website,",
+				"url": "https://todoist.com"
+			},
+			{
+				"title": "Apple",
+				"description": "The #1 vendor of cellphones and computers in the world. We created everything for them!",
+				"tags": "UI/UX Design, Website Development, Hosting",
+				"img": "/images/portfolio/portfolio_apple_photo.jpg",
+				"alt": "Image of the website Airbnb",
+				"url": "https://apple.com"
+			},
+			{
+				"title": "Notion",
+				"description": "Art portfolio website which showcases clay sculptures made by the artist.",
+				"tags": "UI/UX Design, Website Development, Hosting",
+				"img": "/images/portfolio/portfolio_notion_photo.jpg",
+				"alt": "Image of the Notion website",
+				"url": "https://notion.com"
+			}
+		]
 	},
 	"footer": {
 		"motto": "All-in-one place for your web design and development needs.",
