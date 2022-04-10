@@ -15,19 +15,19 @@ export interface ILanguage {
 		pitch: {
 			one: {
 				heading: string;
-				text: string;
+				text: string[];
 				img: string;
 				alt: string;
 			};
 			two: {
 				heading: string;
-				text: string;
+				text: string[];
 				img: string;
 				alt: string;
 			};
 			three: {
 				heading: string;
-				text: string;
+				text: string[];
 				img: string;
 				alt: string;
 			};
@@ -46,37 +46,37 @@ export interface ILanguage {
 	services: {
 		graphicDesign: {
 			title: string;
-			text: string;
+			text: string[];
 			img: string;
 			alt: string;
 		};
 		development: {
 			title: string;
-			text: string;
+			text: string[];
 			img: string;
 			alt: string;
 		};
 		seo: {
 			title: string;
-			text: string;
+			text: string[];
 			img: string;
 			alt: string;
 		};
 		cms: {
 			title: string;
-			text: string;
+			text: string[];
 			img: string;
 			alt: string;
 		};
 		techConsulting: {
 			title: string;
-			text: string;
+			text: string[];
 			img: string;
 			alt: string;
 		};
 		hosting: {
 			title: string;
-			text: string;
+			text: string[];
 			img: string;
 			alt: string;
 		};
@@ -84,13 +84,13 @@ export interface ILanguage {
 	about: {
 		company: {
 			title: string;
-			text: string;
+			text: string[];
 			img: string;
 			alt: string;
 		};
 		tech: {
 			title: string;
-			text: string;
+			text: string[];
 			img: string;
 			alt: string;
 		};

@@ -46,37 +46,55 @@
 	"services": {
 		"graphicDesign": {
 			"title": "Graphic Design",
-			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
+			"text": [
+				"We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn't make sense.",
+				"This is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don't care. Please let me know what you think when you read this. I want ice cream and candy."
+			],
 			"img": "/images/services/service_graphic_design_drawing.svg",
 			"alt": "Drawing of a woman watching a piece of art"
 		},
 		"development": {
 			"title": "Development",
-			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
+			"text": [
+				"We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn't make sense.",
+				"This is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don't care. Please let me know what you think when you read this. I want ice cream and candy."
+			],
 			"img": "/images/services/service_development_drawing.svg",
 			"alt": "Drawing of a woman holding a cellphone with code on the screen"
 		},
 		"seo": {
 			"title": "SEO",
-			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
+			"text": [
+				"We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn't make sense.",
+				"This is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don't care. Please let me know what you think when you read this. I want ice cream and candy."
+			],
 			"img": "/images/services/service_seo_drawing.svg",
 			"alt": "Drawing of a woman looking at some documents with a magnifying glass"
 		},
 		"cms": {
 			"title": "CMS",
-			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
+			"text": [
+				"We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn't make sense.",
+				"This is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don't care. Please let me know what you think when you read this. I want ice cream and candy."
+			],
 			"img": "/images/services/service_cms_drawing.svg",
 			"alt": "Drawing of a woman looking at two images"
 		},
 		"techConsulting": {
 			"title": "Tech Consulting",
-			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
+			"text": [
+				"We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn't make sense.",
+				"This is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don't care. Please let me know what you think when you read this. I want ice cream and candy."
+			],
 			"img": "/images/services/service_tech_consulting_drawing.svg",
 			"alt": "Drawing of a man and a woman carrying some tech stuff"
 		},
 		"hosting": {
 			"title": "Hosting",
-			"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn’t make sense.\n\nThis is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don’t care. Please let me know what you think when you read this. I want ice cream and candy.",
+			"text": [
+				"We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business. then we write some text that doesn't make sense.",
+				"This is the second paragraph of filler text. I wonder what I will write here, it is probably some bullshit. But it will show me how the website will look in the end so i don't care. Please let me know what you think when you read this. I want ice cream and candy."
+			],
 			"img": "/images/services/service_hosting_drawing.svg",
 			"alt": "Drawing of a woman looking at some servers"
 		}
@@ -84,13 +102,18 @@
 	"about": {
 		"company": {
 			"title": "The Company",
-			"text": "“maas media” was started in 2022 by Asgeir who is a professional full-stack developer and freelance designer. The company visuon  is to help people and businesses establish a strong online presence for their businesses and passion projects.\n\nThe company is located in Surnadal which is a small town in the middle of Norway, but takes on jobs from all over the world.  ",
+			"text": [
+				"maas media was started in 2022 by Asgeir who is a professional full-stack developer and freelance designer. The company vision is to help people and businesses establish a strong online presence for their businesses and passion projects.",
+				"The company is located in Surnadal which is a small town in the middle of Norway, but takes on jobs from all over the world."
+			],
 			"img": "/images/about/about_company_drawing.svg",
 			"alt": "Drawing of a man looking at a map of the earth with a dot on Norway."
 		},
 		"tech": {
 			"title": "The Tech",
-			"text": "We design and develop all our client websites from scratch using industry standard tools and tech.  The design process is done in cooperation with the client using Figma, then the website is developed using Svelte. If the client has any special requirements for the framework we are also able to develop the website in React or Vuejs. All our websites that we host are hosted in the cloud on Digitalocean.",
+			"text": [
+				"We design and develop all our client websites from scratch using industry standard tools and tech.  The design process is done in cooperation with the client using Figma, then the website is developed using Svelte. If the client has any special requirements for the framework we are also able to develop the website in React or Vuejs. All our websites that we host are hosted in the cloud on Digitalocean."
+			],
 			"img": "/images/about/about_tech_drawing.svg",
 			"alt": "Drawing of a man sitting at a computer, coding a website."
 		},

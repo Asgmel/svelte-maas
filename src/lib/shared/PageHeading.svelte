@@ -14,15 +14,18 @@
 		flex-direction: column;
 		align-items: center;
 		row-gap: 20px;
-		margin-top: 20px;
+		margin: 80px 0;
+		max-width: 410px;
 	}
 	h1 {
-		letter-spacing: 8px;
-		color: var(--color-pink);
+		font-weight: 800;
+		font-size: 48px;
+		line-height: 60px;
+		letter-spacing: 10px;
+		color: var(--color-white);
 	}
 	p {
 		color: var(--color-white);
-		max-width: 600px;
 		text-align: center;
 		font-size: 16px;
 	}

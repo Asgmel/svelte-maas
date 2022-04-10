@@ -1,48 +1,54 @@
 <script>
 	import Container from '$lib/shared/Container.svelte';
-	import ContentBox from '$lib/shared/ContentBox.svelte';
+	import ContentCard from '$lib/shared/ContentCard.svelte';
 	import PageHeading from '$lib/shared/PageHeading.svelte';
 	import { text } from '$lib/store/languageStore';
 
 	const sections = [
 		{
-			light: false,
+			mirrored: false,
 			data: $text.services.graphicDesign
 		},
 		{
-			light: true,
+			mirrored: true,
 			data: $text.services.development
 		},
 		{
-			light: false,
+			mirrored: false,
 			data: $text.services.seo
 		},
 		{
-			light: true,
+			mirrored: true,
 			data: $text.services.cms
 		},
 		{
-			light: false,
+			mirrored: false,
 			data: $text.services.techConsulting
 		},
 		{
-			light: true,
+			mirrored: true,
 			data: $text.services.hosting
 		}
 	];
 </script>
 
 <Container light>
-	<PageHeading title="Services" />
+	<PageHeading
+		title="Services"
+		description="Below you can see an overview of topics we can assist your and your business with."
+	/>
 </Container>
-{#each sections as section, i}
-	<Container light={section.light}>
-		<ContentBox
-			data={section.data}
-			reverse={section.light}
-			top
-			bottom
-			justifyImage={!section.light ? 'right' : 'left'}
-		/>
-	</Container>
-{/each}
+<div class="content">
+	{#each sections as { mirrored, data }}
+		<ContentCard {mirrored} {data} />
+	{/each}
+</div>
+
+<style>
+	.content {
+		display: flex;
+		flex-direction: column;
+		row-gap: 100px;
+		background-color: var(--color-darkblue);
+	}
+</style>

@@ -19,19 +19,19 @@ export const text = writable<ILanguage>({
 		pitch: {
 			one: {
 				heading: '',
-				text: '',
+				text: [],
 				img: '',
 				alt: ''
 			},
 			two: {
 				heading: '',
-				text: '',
+				text: [],
 				img: '',
 				alt: ''
 			},
 			three: {
 				heading: '',
-				text: '',
+				text: [],
 				img: '',
 				alt: ''
 			},
@@ -50,37 +50,37 @@ export const text = writable<ILanguage>({
 	services: {
 		graphicDesign: {
 			title: '',
-			text: '',
+			text: [],
 			img: '',
 			alt: ''
 		},
 		development: {
 			title: '',
-			text: '',
+			text: [],
 			img: '',
 			alt: ''
 		},
 		seo: {
 			title: '',
-			text: '',
+			text: [],
 			img: '',
 			alt: ''
 		},
 		cms: {
 			title: '',
-			text: '',
+			text: [],
 			img: '',
 			alt: ''
 		},
 		techConsulting: {
 			title: '',
-			text: '',
+			text: [],
 			img: '',
 			alt: ''
 		},
 		hosting: {
 			title: '',
-			text: '',
+			text: [],
 			img: '',
 			alt: ''
 		}
@@ -88,13 +88,13 @@ export const text = writable<ILanguage>({
 	about: {
 		company: {
 			title: '',
-			text: '',
+			text: [],
 			img: '',
 			alt: ''
 		},
 		tech: {
 			title: '',
-			text: '',
+			text: [],
 			img: '',
 			alt: ''
 		},

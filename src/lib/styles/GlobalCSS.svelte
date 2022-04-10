@@ -16,6 +16,6 @@
 		font-style: normal;
 		font-weight: 600;
 		font-size: 18px;
-		line-height: 29px;
+		line-height: 30px;
 	}
 </style>
