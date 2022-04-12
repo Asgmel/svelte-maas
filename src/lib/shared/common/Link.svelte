@@ -2,9 +2,10 @@
 	export let href = '/';
 	export let empty = false;
 	export let fontSize = '16px';
+	export let onClick = () => {};
 </script>
 
-<a {href} class:text={!empty} style="font-size: {fontSize}">
+<a {href} class:text={!empty} style="font-size: {fontSize}" on:click={onClick}>
 	<slot />
 </a>
 

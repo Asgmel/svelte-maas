@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Link from '$lib/shared/Link.svelte';
-	import Logo from '$lib/shared/Logo.svelte';
+	import Link from '$lib/shared/common/Link.svelte';
+	import Logo from '$lib/shared/common/Logo.svelte';
 	import { svg_element } from 'svelte/internal';
 	import links from './footerElements';
 </script>

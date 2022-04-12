@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Button from '$lib/shared/Button.svelte';
-	import Card from '$lib/shared/Card.svelte';
-	import Container from '$lib/shared/Container.svelte';
+	import Button from '$lib/shared/common/Button.svelte';
+	import Card from '$lib/shared/common/Card.svelte';
+	import Container from '$lib/shared/common/Container.svelte';
 </script>
 
 <Container light>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Card from '$lib/shared/Card.svelte';
+	import Card from '$lib/shared/common/Card.svelte';
 
 	export let portfolio = {
 		title: '',

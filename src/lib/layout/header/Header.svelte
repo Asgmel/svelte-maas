@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Logo from '$lib/shared/Logo.svelte';
-	import Button from '$lib/shared/Button.svelte';
-	import Link from '$lib/shared/Link.svelte';
+	import Logo from '$lib/shared/common/Logo.svelte';
+	import Button from '$lib/shared/common/Button.svelte';
+	import Link from '$lib/shared/common/Link.svelte';
 	import MobileMenu from './MobileMenu.svelte';
 	import LanguageSelector from './LanguageSelector.svelte';
 	import { text } from '$lib/store/languageStore';

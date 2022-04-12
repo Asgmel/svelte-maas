@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { text } from '$lib/store/languageStore';
-	import Container from '$lib/shared/Container.svelte';
+	import Container from '$lib/shared/common/Container.svelte';
 
 	const sections = [$text.landing.pitch.one, $text.landing.pitch.two, $text.landing.pitch.three];
 </script>

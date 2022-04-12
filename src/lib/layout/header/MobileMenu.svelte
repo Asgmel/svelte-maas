@@ -1,7 +1,7 @@
 <script>
-	import Button from '$lib/shared/Button.svelte';
-	import Link from '$lib/shared/Link.svelte';
-	import Logo from '$lib/shared/Logo.svelte';
+	import Button from '$lib/shared/common/Button.svelte';
+	import Link from '$lib/shared/common/Link.svelte';
+	import Logo from '$lib/shared/common/Logo.svelte';
 
 	export let light = false;
 	let active = false;
@@ -35,13 +35,13 @@
 		<Logo light />
 		<ul class="links">
 			<li>
-				<Link href="/services" fontSize="25px">Services</Link>
+				<Link href="/services" fontSize="25px" onClick={() => setActive(false)}>Services</Link>
 			</li>
 			<li>
-				<Link href="/portfolio" fontSize="25px">Portfolio</Link>
+				<Link href="/portfolio" fontSize="25px" onClick={() => setActive(false)}>Portfolio</Link>
 			</li>
 			<li>
-				<Link href="/about" fontSize="25px">About Us</Link>
+				<Link href="/about" fontSize="25px" onClick={() => setActive(false)}>About Us</Link>
 			</li>
 			<li class="button">
 				<Button width="200px" link ghostButton fontSize="25px">Contact Us</Button>
