@@ -13,38 +13,18 @@ export const text = writable<ILanguage>({
 	},
 	landing: {
 		hero: {
-			heading: '',
-			text: ''
+			title: '',
+			text: '',
+			button: ''
 		},
 		pitch: {
-			one: {
-				heading: '',
-				text: [],
-				img: '',
-				alt: ''
-			},
-			two: {
-				heading: '',
-				text: [],
-				img: '',
-				alt: ''
-			},
-			three: {
-				heading: '',
-				text: [],
-				img: '',
-				alt: ''
-			},
+			items: [],
 			learnMore: ''
 		},
 		services: {
-			heading: '',
-			graphicDesign: '',
-			webDevelopment: '',
-			seo: '',
-			cms: '',
-			techConsulting: '',
-			hosting: ''
+			title: '',
+			items: [],
+			button: ''
 		}
 	},
 	services: {

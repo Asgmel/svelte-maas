@@ -5,10 +5,12 @@
 	import PageHeading from '$lib/shared/headings/PageHeading.svelte';
 	import PageHeadingContainer from '$lib/shared/components/PageHeadingContainer.svelte';
 	import { text } from '$lib/store/languageStore';
+	import HeaderMargin from '$lib/shared/common/HeaderMargin.svelte';
 
 	const portfolios = $text.portfolio.items;
 </script>
 
+<HeaderMargin />
 <Container light>
 	<PageHeadingContainer>
 		<PageHeading>Portfolio</PageHeading>

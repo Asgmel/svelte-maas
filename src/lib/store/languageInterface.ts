@@ -9,38 +9,27 @@ export interface ILanguage {
 	};
 	landing: {
 		hero: {
-			heading: string;
+			title: string;
 			text: string;
+			button: string;
 		};
 		pitch: {
-			one: {
-				heading: string;
+			items: {
+				title: string;
 				text: string[];
 				img: string;
 				alt: string;
-			};
-			two: {
-				heading: string;
-				text: string[];
-				img: string;
-				alt: string;
-			};
-			three: {
-				heading: string;
-				text: string[];
-				img: string;
-				alt: string;
-			};
+			}[];
 			learnMore: string;
 		};
 		services: {
-			heading: string;
-			graphicDesign: string;
-			webDevelopment: string;
-			seo: string;
-			cms: string;
-			techConsulting: string;
-			hosting: string;
+			title: string;
+			items: {
+				title: string;
+				icon: string;
+				url: string;
+			}[];
+			button: string;
 		};
 	};
 	services: {

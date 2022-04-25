@@ -9,38 +9,68 @@
 	},
 	"landing": {
 		"hero": {
-			"heading": "Hassle Free Web Development",
-			"text": "All-in-one place for your web design and development needs."
+			"title": "Hassle Free Web Development",
+			"text": "All-in-one place for your web design and development needs.",
+			"button": "Contact Us"
 		},
 		"pitch": {
-			"one": {
-				"heading": "Custom Made Designs",
-				"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business.",
-				"img": "/images/landing/landing_design_drawing.svg",
-				"alt": "Drawing of a woman designing something."
-			},
-			"two": {
-				"heading": "Modern and Responsive Websites",
-				"text": "All our websites are made according to the current web-development standards with responsive design. This means the website will look beautiful on all screens, be it phone, tablet or desktop.",
-				"img": "/images/landing/landing_responsive_drawing.svg",
-				"alt": "Drawing of a woman looking at responsive design."
-			},
-			"three": {
-				"heading": "Search Engine Optimized",
-				"text": "Our websites are search engine optimized (SEO), which ensures that they appear and look good in searches on all popular search engines like Google, Bing and DuckDuckGo.",
-				"img": "/images/landing/landing_seo_drawing.svg",
-				"alt": "Drawing of a woman searching for something."
-			},
+			"items": [
+				{
+					"title": "Custom Made Designs",
+					"text": "We tailor every website to your needs and wishes to make your ideas come to life. We can do the whole design and development process for you, to give you more time to focus on other areas of your business.",
+					"img": "/images/landing/landing_design_drawing.svg",
+					"alt": "Drawing of a woman designing something."
+				},
+				{
+					"title": "Modern and Responsive Websites",
+					"text": "All our websites are made according to the current web-development standards with responsive design. This means the website will look beautiful on all screens, be it phone, tablet or desktop.",
+					"img": "/images/landing/landing_responsive_drawing.svg",
+					"alt": "Drawing of a woman looking at responsive design."
+				},
+				{
+					"title": "Search Engine Optimized",
+					"text": "Our websites are search engine optimized (SEO), which ensures that they appear and look good in searches on all popular search engines like Google, Bing and DuckDuckGo.",
+					"img": "/images/landing/landing_seo_drawing.svg",
+					"alt": "Drawing of a woman searching for something."
+				}
+			],
 			"learnMore": "Learn More"
 		},
 		"services": {
-			"heading": "Our Services",
-			"graphicDesign": "Graphic Design",
-			"webDevelopment": "Web Development",
-			"seo": "SEO",
-			"cms": "CMS",
-			"techConsulting": "Tech Consulting",
-			"hosting": "Hosting"
+			"title": "Our Services",
+			"items": [
+				{
+					"title": "Graphic Design",
+					"icon": "mi_photo.svg",
+					"url": "/services"
+				},
+				{
+					"title": "Development",
+					"icon": "mi_globe.svg",
+					"url": "/services"
+				},
+				{
+					"title": "SEO",
+					"icon": "mi_pageview.svg",
+					"url": "/services"
+				},
+				{
+					"title": "CMS",
+					"icon": "mi_media.svg",
+					"url": "/services"
+				},
+				{
+					"title": "Tech Consulting",
+					"icon": "mi_group.svg",
+					"url": "/services"
+				},
+				{
+					"title": "Hosting",
+					"icon": "mi_cloud.svg",
+					"url": "/services"
+				}
+			],
+			"button": "Contact Us"
 		}
 	},
 	"services": {

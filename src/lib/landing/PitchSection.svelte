@@ -1,25 +1,27 @@
 <script lang="ts">
-	import { text } from '$lib/store/languageStore';
 	import Container from '$lib/shared/common/Container.svelte';
 
-	const sections = [$text.landing.pitch.one, $text.landing.pitch.two, $text.landing.pitch.three];
+	export let data = {
+		items: [],
+		learnMore: ''
+	};
 </script>
 
 <Container>
-	{#each sections as section, i}
+	{#each data.items as section, i}
 		<div
 			class="section"
 			class:top={i == 0}
-			class:bottom={i == sections.length - 1}
+			class:bottom={i == data.items.length - 1}
 			class:reverse={i == 1}
 		>
 			<div class="textContainer">
-				<h1>{section.heading}</h1>
+				<h1>{section.title}</h1>
 				<p>{section.text}</p>
 				<div class="linkRow">
 					<div class="linkContainer">
 						<a href="/" class="link"
-							>Learn More
+							>{data.learnMore}
 							<div class="arrow" />
 						</a>
 					</div>

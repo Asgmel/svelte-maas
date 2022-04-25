@@ -5,6 +5,7 @@
 	import PageHeadingContainer from '$lib/shared/components/PageHeadingContainer.svelte';
 	import PageHeading from '$lib/shared/headings/PageHeading.svelte';
 	import HeadingText from '$lib/shared/content/HeadingText.svelte';
+	import HeaderMargin from '$lib/shared/common/HeaderMargin.svelte';
 
 	const sections = [
 		{
@@ -34,6 +35,7 @@
 	];
 </script>
 
+<HeaderMargin />
 <Container light>
 	<PageHeadingContainer>
 		<PageHeading>Services</PageHeading>

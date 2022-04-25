@@ -2,38 +2,26 @@
 	import Button from '$lib/shared/common/Button.svelte';
 	import Card from '$lib/shared/common/Card.svelte';
 	import Container from '$lib/shared/common/Container.svelte';
+
+	export let data = {
+		title: '',
+		items: [],
+		button: ''
+	};
 </script>
 
 <Container light>
 	<div class="section">
-		<h1>Our Services</h1>
+		<h1>{data.title}</h1>
 		<div class="cardContainer">
-			<Card>
-				<div class="icon" style="background-image: url(&quot;/icons/mi_photo.svg&quot;)" />
-				<h3>Graphic Design</h3>
-			</Card>
-			<Card>
-				<div class="icon" style="background-image: url(&quot;/icons/mi_globe.svg&quot;)" />
-				<h3>Web Development</h3>
-			</Card>
-			<Card>
-				<div class="icon" style="background-image: url(&quot;/icons/mi_pageview.svg&quot;)" />
-				<h3>SEO</h3>
-			</Card>
-			<Card>
-				<div class="icon" style="background-image: url(&quot;/icons/mi_media.svg&quot;)" />
-				<h3>CMS</h3>
-			</Card>
-			<Card>
-				<div class="icon" style="background-image: url(&quot;/icons/mi_group.svg&quot;)" />
-				<h3>Tech Consulting</h3>
-			</Card>
-			<Card>
-				<div class="icon" style="background-image: url(&quot;/icons/mi_cloud.svg&quot;)" />
-				<h3>Hosting</h3>
-			</Card>
+			{#each data.items as item}
+				<Card>
+					<div class="icon" style="background-image: url(&quot;/icons/{item.icon}&quot;)" />
+					<h3>{data.title}</h3>
+				</Card>
+			{/each}
 		</div>
-		<Button width="220px" height="70px">Contact Us</Button>
+		<Button width="220px" height="70px">{data.button}</Button>
 	</div>
 </Container>
 
