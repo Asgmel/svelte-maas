@@ -16,10 +16,10 @@
 				<Link href="/services">{$text.shared.pages.services}</Link>
 			</li>
 			<li class:light={$page.routeId !== ''}>
-				<Link href="/portfolio">{$text.shared.pages.portfolio}</Link>
+				<Link href="/about">{$text.shared.pages.about}</Link>
 			</li>
 			<li class:light={$page.routeId !== ''}>
-				<Link href="/about">{$text.shared.pages.about}</Link>
+				<Link href="/portfolio">{$text.shared.pages.portfolio}</Link>
 			</li>
 			<li class="button">
 				<Button link ghostButton>{$text.shared.pages.contact}</Button>
